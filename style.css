@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter" ,sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  position: relative;
+}
+.container{
+  width: 300px;
+  height: auto;
+  padding: 40px 30px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+h4{
+  font-size: 20px;
+  color: #121212;
+}
+.form{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input_box input{
+  border: none;
+  max-width: 20%;
+  height: 60px;
+  text-align: center;
+  background: #f0f0f0;
+  font-size: 25px
+}
+.input_box input::-webkit-inner-spin-button,
+.input_box input::-webkit-outer-spin-button{
+  display: none;
+}
+.input_box input :focus {
+  outline: 1.5px solid black;
+  outline-offset: 2px;
+}
+form button{
+  margin-top: 25px;
+  width: 92%;
+  color: #525252;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+  border: none;
+  border-radius: 6px;
+  pointer-events: none;
+  cursor: pointer;
+  background-color: #e9d585;
+  transition: all 0.2s ease;
+}
+
+form button.active{
+  background: #ffcc00;
+  pointer-events: auto;
+  color: #000000;
+}
+form button:hover{
+   background: #e6b801;
+ }
+
+.message{
+  width: 300px;
+  height: 50px;
+  color: black;
+  background: white;
+  position: absolute;
+  bottom: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+.message--displayoff{
+  display: none;
+  pointer-events: none;
+}
